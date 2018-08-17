@@ -1,10 +1,16 @@
-// Creating variables to hold user guesses, and the number of wins, losses, guesses left.
+// Variable to hold number of user wins
 var wins = 0;
+// Variable to hold number of user losses
 var losses = 0;
+// Variable to hold number of guesses left by the user
 var guessesLeft = 9;
+// Variable to hold number of user guess
 var userGuess;
+// Variable to hold maximum number of 9 user guesses 
 var userGuessArr = [];
+// Varibale to hold computer guess 
 var computerGuess;
+// Variable to hold maximum number of 9 computer guesses 
 var computerGuessArr = [];
 
 // Generating a string of letters that computer will pick from 
@@ -26,7 +32,7 @@ function updateContent() {
 // The content that has to be shown on startup
 document.body.onload = function () {
     updateContent();
-}
+}// End of loading page
 
 // A function to compare user input against computer choice and update results accordingly
 function compare() {
